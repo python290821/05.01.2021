@@ -16,9 +16,8 @@ def dao_connection():
     return Dao()
 
 def test_get_all(dao_connection):
-    dao_connection.a = 1
     assert dao_connection.get_all() == [1, 2, 3, 4, 5]
 
 def test_get_first(dao_connection):
-    assert dao_connection.get_first() == [dao_connection.a]
+    assert dao_connection.get_first() == 1]
 
