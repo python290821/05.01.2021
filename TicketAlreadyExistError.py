@@ -1,0 +1,2 @@
+class TicketAlreadyExistError(Exception):
+    pass
